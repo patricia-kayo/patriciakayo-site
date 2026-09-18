@@ -22,7 +22,7 @@
   "use strict";
 
   var GA4_ID      = "G-XXXXXXXXXX";                          // <-- seu ID do GA4
-  var ADS_SEND_TO = "AW-XXXXXXXXXX/XXXXXXXXXXXXXXXXXXX";      // <-- seu rótulo de conversão do Ads
+  var ADS_SEND_TO = "AW-18197236635/_U8VCOru1_wcEJuXj-VD";    // <-- conversão "Clique no WhatsApp"
 
   var hasGA4 = GA4_ID && GA4_ID.indexOf("XXXX") === -1;
   var hasAds = ADS_SEND_TO && ADS_SEND_TO.indexOf("XXXX") === -1;
