@@ -24,3 +24,12 @@ document.documentElement.classList.add('js');
   }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
   els.forEach(function (e) { io.observe(e); });
 })();
+
+// carrega o rastreamento de conversão (GA4 + Google Ads).
+// configure seus IDs em js/tracking.js — enquanto não configurar, nada é carregado.
+(function () {
+  var t = document.createElement('script');
+  t.src = 'js/tracking.js';
+  t.defer = true;
+  document.head.appendChild(t);
+})();
