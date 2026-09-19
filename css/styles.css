@@ -487,3 +487,24 @@ html:not(.js) .reveal{ opacity:1; transform:none; }
   .scroll-hint span{ display:inline-block; animation:pk-nudge 1.3s ease-in-out infinite; }
   @keyframes pk-nudge{ 0%,100%{ transform:translateX(0);} 50%{ transform:translateX(6px);} }
 }
+/* ---------- fundo quadriculado clarinho (blog / Ciência na Justiça) ---------- */
+body.blog-page{
+  background-color:var(--blog-bg);
+  background-image:
+    linear-gradient(to right, rgba(49,61,71,.07) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(49,61,71,.07) 1px, transparent 1px);
+  background-size:26px 26px;
+}
+body.blog-page .page-hero{ background:transparent; }
+/* ---------- artigo sobre quadriculado (transparente p/ ver a grade) ---------- */
+body.blog-page article[data-article],
+body.blog-page .article-hero,
+body.blog-page .article-body-sec{ background:transparent; }
+/* ---------- retangulo destaque SO no titulo do artigo (justo, sem grade) ---------- */
+body.blog-page .article-hero .wrap--narrow{
+  background:#f4f7fb;
+  border:1px solid rgba(49,61,71,.08);
+  border-radius:14px;
+  padding:40px 44px;
+  box-shadow:0 14px 36px -22px rgba(49,61,71,.45);
+}
