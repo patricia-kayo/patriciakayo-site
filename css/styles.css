@@ -471,3 +471,19 @@ html:not(.js) .reveal{ opacity:1; transform:none; }
   .footer-grid{ grid-template-columns:1fr; }
   .card, .svc{ padding:26px; }
 }
+
+/* ---------- ajustes mobile Início (set/2026) ---------- */
+@media (max-width:640px){
+  .hero-brand .eyebrow{ font-size:.72rem; letter-spacing:.16em; gap:8px; }
+  .hero-brand .eyebrow::before, .hero-brand .eyebrow::after{ width:18px; }
+  .hero-tagline{ font-size:1.32rem; margin:22px auto 34px; }
+  .trust .wrap{ gap:10px 18px; padding:16px 16px; }
+  .trust span, .trust a{ font-size:.7rem; letter-spacing:.03em; }
+}
+/* ---------- dica de deslizar (rows horizontais) ---------- */
+.scroll-hint{ display:none; }
+@media (max-width:640px){
+  .scroll-hint{ display:flex; align-items:center; justify-content:flex-end; gap:8px; font-family:var(--sans); font-weight:500; font-size:.78rem; letter-spacing:.03em; text-transform:uppercase; color:var(--gold); margin:12px 4px 0; }
+  .scroll-hint span{ display:inline-block; animation:pk-nudge 1.3s ease-in-out infinite; }
+  @keyframes pk-nudge{ 0%,100%{ transform:translateX(0);} 50%{ transform:translateX(6px);} }
+}
