@@ -508,3 +508,23 @@ body.blog-page .article-hero .wrap--narrow{
   padding:40px 44px;
   box-shadow:0 14px 36px -22px rgba(49,61,71,.45);
 }
+/* ---------- caixa branca de leitura atrás do corpo do artigo ---------- */
+body.blog-page .article-body-sec .article{
+  max-width:816px;
+  background:rgba(255,255,255,.93);
+  border:1px solid rgba(49,61,71,.07);
+  border-radius:16px;
+  padding:48px 52px;
+  box-shadow:0 18px 44px -26px rgba(49,61,71,.4);
+}
+@media (max-width:640px){
+  body.blog-page .article-body-sec .article{ padding:26px 22px; border-radius:12px; }
+}
+
+/* Ciência na Justiça — aviso de vídeos em breve */
+.video-soon{display:flex;align-items:center;gap:22px;padding:34px 36px;border:1px dashed rgba(49,61,71,.26);border-radius:16px;background:rgba(244,247,251,.6)}
+.video-soon-ic{flex:0 0 auto;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:var(--blog-gold);color:#fff;box-shadow:0 10px 24px -12px rgba(184,146,58,.7)}
+.video-soon-ic svg{width:24px;height:24px;margin-left:3px}
+.video-soon-txt h3{margin:0 0 6px;font-family:'Cormorant Garamond',serif;font-size:1.55rem;line-height:1.15;color:var(--blog-ink);font-weight:600}
+.video-soon-txt p{margin:0;color:var(--blog-mut);max-width:60ch;line-height:1.6}
+@media (max-width:640px){.video-soon{flex-direction:column;text-align:center;gap:16px;padding:28px 22px}.video-soon-txt p{margin:0 auto}}
